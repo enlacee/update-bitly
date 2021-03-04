@@ -1,26 +1,25 @@
 # Bitly API PATH (code BETA)
 
-Automatization autoexecute of the file .sh bash each minute.
+**PROBLEM:** My current public ip change all time
+**SOLUTION:** Ceate script for update the URL bitly themelse i will always have access to my House Server
 
+**TASK:** The function is check if our network has internet  
+And if dont have create a varibale call: `UPDATE_API` with value 1  
+Useful for next execution of this script Execute the PACTH bitly request.
 
-The IDEA was to update the URL When my ROUTER CHANGED of yout current IP (because it has a IP PUBLIC but random)
-So when my Router to reboot is posible that changed to other IP. Therefore I will lose my known IP.
-
-
-### WRONG
+## Wrong (i need access by auth 2 for to do this)
 
 With bitly api rest  WE CAN'T update the field `long_url`  
-i realized than when i started to write ( bad practice :( )
+I realized than when i started to write ( bad practice :( )
 
-
-### Solution to no update the field: long_url
+## Solution to no update the field: long_url
 
 For moment only update the Title from ITEM LINK BITLY  
 Solution1: Udating the title I kwnon for for anyway that happend when Im away from home.  
 Solution2: To send me one mail  with this change  
 
 
-### Config and execute:
+## Config and execute:
 
 Set your seft token (create it on your Bitly settings)
 
