@@ -20,6 +20,12 @@ Solution1: Udating the title I kwnon for for anyway that happend when Im away fr
 Solution2: To send me one mail  with this change
 
 
+### config and execute:
+
+Set your seft token (create it on your Bitly settings)
+
+    BITLY_TOKEN=""
+
 ### IMG
 
 ![Ref Image BITLY URL UPDATE](README/README.png)
