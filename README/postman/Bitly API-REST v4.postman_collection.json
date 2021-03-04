@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "daf5017e-5317-4d73-9e3f-8e626aa913b2",
+		"name": "Bitly API/REST v4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api-ssl.bitly.com/v4/shorten",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cb859cb9008b382dbf2e9c499d3e22d8878521ax",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"long_url\": \"http://190.238.0.207/\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-ssl.bitly.com/v4/shorten",
+					"protocol": "https",
+					"host": [
+						"api-ssl",
+						"bitly",
+						"com"
+					],
+					"path": [
+						"v4",
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-ssl.bitly.com/v4/bitlinks/bit.ly/2PdcQyi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cb859cb9008b382dbf2e9c499d3e22d8878521ax",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-ssl.bitly.com/v4/bitlinks/bit.ly/2PdcQyi",
+					"protocol": "https",
+					"host": [
+						"api-ssl",
+						"bitly",
+						"com"
+					],
+					"path": [
+						"v4",
+						"bitlinks",
+						"bit.ly",
+						"2PdcQyi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-ssl.bitly.com/v4/bitlinks/bit.ly/2PdcQyi",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cb859cb9008b382dbf2e9c499d3e22d8878521ax",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Apache2 Debian Default Page: It works++\",\n    \"tags\": [\"LAN\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-ssl.bitly.com/v4/bitlinks/bit.ly/2PdcQyi",
+					"protocol": "https",
+					"host": [
+						"api-ssl",
+						"bitly",
+						"com"
+					],
+					"path": [
+						"v4",
+						"bitlinks",
+						"bit.ly",
+						"2PdcQyi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
