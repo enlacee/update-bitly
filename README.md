@@ -1,4 +1,4 @@
-# Use bitly API PATH with Bash  (code BETA)
+# Bitly API PATH (code BETA)
 
 Automatization autoexecute of the file .sh bash each minute.
 
