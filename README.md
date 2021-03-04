@@ -9,15 +9,15 @@ So when my Router to reboot is posible that changed to other IP. Therefore I wil
 
 ### WRONG
 
-With bitly api rest  WE CAN'T update the field `long_url`
-i realized than when i started to write (bad practice :( )
+With bitly api rest  WE CAN'T update the field `long_url`  
+i realized than when i started to write ( bad practice :( )
 
 
 ### Solution to no update the field: long_url
 
-For moment only update the Title from ITEM LINK BITLY
-Solution1: Udating the title I kwnon for for anyway that happend when Im away from home.
-Solution2: To send me one mail  with this change
+For moment only update the Title from ITEM LINK BITLY  
+Solution1: Udating the title I kwnon for for anyway that happend when Im away from home.  
+Solution2: To send me one mail  with this change  
 
 
 ### Config and execute:
