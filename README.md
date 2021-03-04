@@ -20,5 +20,5 @@ Solution2: To send me one mail  with this change
 
 
 
-!(Ref Image BITLY URL UPDATE)[README/README.png]
+![Ref Image BITLY URL UPDATE](README/README.png)
 
