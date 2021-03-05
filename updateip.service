@@ -1,6 +1,7 @@
 # ***UpdateIP.service***
 [Unit]
 Description=Revisa y actualiza la IP si este cambio cada 30segundos
+Wants=network.target
 After=multi-user.target
 
 [Service]
@@ -9,6 +10,8 @@ ExecStart=/home/anibal/sites/projects/update-bitly/deamon
 User=anibal
 WorkingDirectory=/home/anibal/sites/projects/update-bitly
 Restart=on-failure
+RestartSec=10
+killMode=process
 StandardOutput=syslog
 StandardError=syslog
 
