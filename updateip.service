@@ -1,0 +1,16 @@
+# ***UpdateIP.service***
+[Unit]
+Description=Revisa y actualiza la IP si este cambio cada 60segundos
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/anibal/sites/projects/update-bitly/deamon
+User=anibal
+WorkingDirectory=/home/anibal/sites/projects/update-bitly
+Restart=on-failure
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

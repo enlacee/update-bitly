@@ -26,7 +26,7 @@ fi
 function useAPIREST_PATH_bitly(){
     local IP=$1
 
-    local BITLY_TOKEN=""
+    local BITLY_TOKEN="cb859cb9008b382dbf2e9c499d3e22d8878521ac"
     local BITLY_APIREST_URL="https://api-ssl.bitly.com/v4/bitlinks"
     local URL_REQUEST="${BITLY_APIREST_URL}/bit.ly/2PdcQyi"
     local DATE_NOW=$(date +'%Y-%m-%d %H:%M:%S')

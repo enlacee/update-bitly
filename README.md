@@ -18,14 +18,33 @@ For moment only update the Title from ITEM LINK BITLY
 Solution1: Udating the title I kwnon for for anyway that happend when Im away from home.  
 Solution2: To send me one mail  with this change  
 
+## Config and Install
 
-## Config and execute:
+### Step 1:
 
 Set your seft token (create it on your Bitly settings)
 
     BITLY_TOKEN=""
 
+### Step 2:
+
+Create Deamon on `DEBIAN` with *systemd*
+Copy the file `updateip.service` to `/etc/systemd/system/`
+Change the next variables:
+
+    User=YourUser
+    ExecStart=locationFromYourScript
+    WorkingDirectory=PathlocationFromYourScript
+
+Execute next sentence:
+
+    cp updateip.service /etc/systemd/system/updateip.service
+
+Now start the service: (its fail check the status service)
+
+    systemctl start updateip.service
+    systemctl status updateip.service
+
 ### IMG
 
 ![Ref Image BITLY URL UPDATE](README/README.png)
-

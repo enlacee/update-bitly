@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while [ 1 ]; 
+do
+  sh ./updateip.sh
+  sleep 60 # 60seconds
+done
