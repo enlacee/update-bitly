@@ -15,21 +15,20 @@ echo -e "=== Start process check my IP:${WHAT_IS_MY_IP} ===\n"
 #     THERE_IS_INTERNET=false
 # fi
 
-if [ "$PACKAGES_INTERNET" == '0%' ];
-then
+if [ "$PACKAGES_INTERNET" = "0%" ]; then
     THERE_IS_INTERNET=true
 else
     THERE_IS_INTERNET=false
 fi
 
 # Use API-BITLY for update the IP PUBLIC from my home server
-function useAPIREST_PATH_bitly(){
-    local IP=$1
+useAPIREST_PATH_bitly () {
+    IP=$1
 
-    local BITLY_TOKEN="cb859cb9008b382dbf2e9c499d3e22d8878521ac"
-    local BITLY_APIREST_URL="https://api-ssl.bitly.com/v4/bitlinks"
-    local URL_REQUEST="${BITLY_APIREST_URL}/bit.ly/2PdcQyi"
-    local DATE_NOW=$(date +'%Y-%m-%d %H:%M:%S')
+    BITLY_TOKEN=""
+    BITLY_APIREST_URL="https://api-ssl.bitly.com/v4/bitlinks"
+    URL_REQUEST="${BITLY_APIREST_URL}/bit.ly/2PdcQyi"
+    DATE_NOW=$(date +'%Y-%m-%d %H:%M:%S')
 
     # echo $URL_REQUEST
     # echo $IP
@@ -44,13 +43,11 @@ function useAPIREST_PATH_bitly(){
 
 # Use APIREST
 export UPDATE_API=`cat VAR_UPDATE_API.txt`
-if [ "$UPDATE_API" == "1" ];
-then
+if [ "$UPDATE_API" = "1" ]; then
     # check if there is INTERNET for to use BITLY API
-    if [ "$PACKAGES_INTERNET" == '0%' ];
-    then
+    if [ "$PACKAGES_INTERNET" = "0%" ]; then
         # Call Function
-        echo -e "=== Actualizaa API REST ===\n"
+        echo -e "=== Actualiza API REST ===\n"
         useAPIREST_PATH_bitly "$WHAT_IS_MY_IP"
         UPDATE_API=0
         echo $UPDATE_API > VAR_UPDATE_API.txt

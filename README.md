@@ -45,6 +45,8 @@ Now start the service: (its fail check the status service)
     systemctl start updateip.service
     systemctl status updateip.service
 
-### IMG
+### IMG 
 
 ![Ref Image BITLY URL UPDATE](README/README.png)
+
+![status updateip service](updateip-service.png)

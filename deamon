@@ -3,5 +3,5 @@
 while [ 1 ]; 
 do
   sh ./updateip.sh
-  sleep 60 # 60seconds
+  sleep 30 # 60seconds
 done
