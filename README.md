@@ -1,5 +1,7 @@
 # Deamon with bash
 
+Reference: [Create Deamon in Debian](https://linuxhint.com/systemd_unit_file_service/)
+
 **TASK:** This Deamon: check if our network has internet   
 And if dont have update a link: `bit.ly/2PdcQyi` When the internet come back.
 
@@ -42,8 +44,11 @@ Execute next sentence:
 
 Now start the service: (its fail check the status service)
 
-    systemctl start updateip.service
-    systemctl status updateip.service
+    sudo systemctl start updateip.service
+    sudo systemctl status updateip.service
+
+And automatically get it to start on boot, this is useful for when the main server restarts:
+    sudo systemctl enable updateip.service 
 
 ### IMG 
 
