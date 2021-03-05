@@ -49,4 +49,4 @@ Now start the service: (its fail check the status service)
 
 ![Ref Image BITLY URL UPDATE](README/README.png)
 
-![status updateip service](updateip-service.png)
+![status updateip service](README/updateip-service.png)
