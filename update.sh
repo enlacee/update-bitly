@@ -6,6 +6,8 @@ PACKAGES=$(ping -c 1 192.168.1.1 | grep % |awk '{print $6}')
 PACKAGES_INTERNET=$(ping -c 1 www.google.com | grep % |awk '{print $6}')
 WHAT_IS_MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
+echo -e "=== Start process check my IP:${WHAT_IS_MY_IP} ===\n"
+
 # if [ "$PACKAGES" == '0%' ];
 # then
 #     THERE_IS_INTERNET=true
