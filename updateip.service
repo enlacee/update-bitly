@@ -1,6 +1,6 @@
 # ***UpdateIP.service***
 [Unit]
-Description=Revisa y actualiza la IP si este cambio cada 60segundos
+Description=Revisa y actualiza la IP si este cambio cada 30segundos
 After=multi-user.target
 
 [Service]

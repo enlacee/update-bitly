@@ -1,16 +1,16 @@
-# Bitly API PATH (code BETA)
+# Deamon with bash
 
-**PROBLEM:** My current public ip change all time
-**SOLUTION:** Ceate script for update the URL bitly themelse i will always have access to my House Server
+**TASK:** This Deamon: check if our network has internet   
+And if dont have update a link: `bit.ly/2PdcQyi` When the internet come back.
 
-**TASK:** The function is check if our network has internet  
-And if dont have create a varibale call: `UPDATE_API` with value 1  
-Useful for next execution of this script Execute the PACTH bitly request.
+
+**PROBLEM:** My current public ip change all time  
+**SOLUTION:** Ceate script for update the URL bitly themelse i will always have access to my House Server  
 
 ## Wrong (i need access by auth 2 for to do this)
 
 With bitly api rest  WE CAN'T update the field `long_url`  
-I realized than when i started to write ( bad practice :( )
+I realized than when i started to write ( bad practice :( )  
 
 ## Solution to no update the field: long_url
 
@@ -22,7 +22,7 @@ Solution2: To send me one mail  with this change
 
 ### Step 1:
 
-Set your seft token (create it on your Bitly settings)
+Set your seft token (create it on your Bitly settings)  
 
     BITLY_TOKEN=""
 
